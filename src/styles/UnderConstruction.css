@@ -1,0 +1,33 @@
+.under-construction {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 14px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;  
+}
+
+.under-construction .icon {
+  font-size: 48px;
+  color: #f4a261;
+  animation: rotate 3s linear infinite;
+}
+
+.under-construction h2 {
+  font-size: 1.8rem;
+}
+
+.under-construction p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 480px;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
