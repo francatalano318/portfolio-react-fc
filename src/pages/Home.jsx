@@ -3,6 +3,7 @@ import profilePic from '../assets/4x4.jpg'
 import { useContext } from 'react';
 import { LanguageContext } from "../context/LanguageContext";
 import { texts } from "../i18n/texts";
+import AnimatedText from '../components/AnimatedText';
 
 
 function Home() {
@@ -17,7 +18,9 @@ function Home() {
       transition={{ duration: 0.8 }}
     >
       <div className="home-content">
-        <h1>Francisco Joaquín Catalano</h1>
+        <h1>
+          <AnimatedText text="Francisco Joaquín Catalano"/>
+        </h1>
         <h2>{texts[lang].workPosition}</h2>
         <p style={{ whiteSpace: "pre-line" }}>
           {texts[lang].aboutMe}

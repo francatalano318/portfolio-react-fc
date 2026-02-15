@@ -16,7 +16,7 @@ function NotFound() {
       <h2>{texts[lang].notFoundTitle}</h2>
       <p>{texts[lang].notFoundSubtitle}</p>
 
-      <button onClick={() => navigate("/")}>
+      <button className="back-home-btn" onClick={() => navigate("/")}>
         {texts[lang].notFoundButton}
       </button>
     </div>
