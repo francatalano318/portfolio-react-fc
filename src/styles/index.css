@@ -95,12 +95,24 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
-  gap: 40px;
+  
+  
 }
 
 .home-content {
-  max-width: 600px;
+  max-width: 700px;  
+}
+
+.home-body{
+  border: 1px solid var(--border-section-separator);
+  box-shadow: 0 12px 30px var(--shadow);  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  gap: 40px;
+  margin: 0px 20px;
+  border-radius: 14px;
 }
 
 .home-image img {
@@ -108,11 +120,19 @@ button:focus-visible {
   height: 280px;
   object-fit: cover;
   border-radius: 50%;  
+  
 }
 
 /* 📱 Responsive */
 @media (max-width: 768px) {
-  .home {
+  /* .home {
+    flex-direction: column-reverse;    
+    text-align: center;
+    padding: 40px 20px;   
+    justify-content:start; 
+  } */
+
+  .home-body{
     flex-direction: column-reverse;    
     text-align: center;
     padding: 40px 20px;   

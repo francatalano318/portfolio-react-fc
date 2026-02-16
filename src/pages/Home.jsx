@@ -17,18 +17,21 @@ function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="home-content">
-        <h1>
-          <AnimatedText text="Francisco Joaquín Catalano"/>
-        </h1>
-        <h2>{texts[lang].workPosition}</h2>
-        <p style={{ whiteSpace: "pre-line" }}>
-          {texts[lang].aboutMe}
-        </p>
-      </div>
+      <div className='home-body'>
+        <div className="home-content">
+          <h1>
+            <AnimatedText text="Francisco Joaquín Catalano"/>
+          </h1>
+          <h2>{texts[lang].workPosition}</h2>
+          <p style={{ whiteSpace: "pre-line" }}>
+            {texts[lang].aboutMe}
+          </p>
+        </div>
 
-      <div className="home-image">
-        <img src={profilePic} alt="Foto de Francisco" />
+        <div className="home-image">
+          <img src={profilePic} alt="Foto de Francisco" />
+        </div>
+
       </div>
     </motion.section>
   )
