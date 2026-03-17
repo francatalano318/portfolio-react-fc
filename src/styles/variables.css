@@ -1,0 +1,36 @@
+/* ============================
+   CSS VARIABLES & THEME
+============================ */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --card-bg: #f5f5f5;
+  --border-color: #dddddd;
+  --border-section-separator: #e5e5e5;
+  --text-color-secundary: #666;
+  --caret-color: #222;
+  --placeholder-color: #222;
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f0f0f;
+  --text-color: #eee;
+  --card-bg: #1a1a1a;
+  --border-color: #333;
+  --border-section-separator: #232323;
+  --text-color-secundary: #aaa;
+  --caret-color: #eee;
+  --placeholder-color: #ccc;
+  --shadow: rgba(0, 0, 0, 0.6);
+}

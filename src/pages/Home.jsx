@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { LanguageContext } from "../context/LanguageContext";
 import { texts } from "../i18n/texts";
 import AnimatedText from '../components/AnimatedText';
+import Diplomas from '../components/Diplomas';
 
 
 function Home() {
@@ -11,30 +12,37 @@ function Home() {
   const {lang} = useContext(LanguageContext);
 
   return (
-    <motion.section
-      className="home"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <div className='home-body'>
-        <div className="home-content">
-          <h1>
-            <AnimatedText text="Francisco Joaquín Catalano"/>
-          </h1>
-          <h2>{texts[lang].workPosition}</h2>
-          <p style={{ whiteSpace: "pre-line" }}>
-            {texts[lang].aboutMe}
-          </p>
-        </div>
+    <div className="home-wrapper">
+        <motion.section
+        className="home"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className='home-body'>
+          <div className="home-content">
+            <h1>
+              <AnimatedText text="Francisco Joaquín Catalano"/>
+            </h1>
+            <h2>{texts[lang].workPosition}</h2>
+            <p style={{ whiteSpace: "pre-line" }}>
+              {texts[lang].aboutMe}
+            </p>
+          </div>
 
-        <div className="home-image">
-          <img src={profilePic} alt="Foto de Francisco" />
-        </div>
+          <div className="home-image">
+            <img src={profilePic} alt="Foto de Francisco" />
+          </div>
 
-      </div>
-    </motion.section>
+        
+        </div>
+      </motion.section>
+
+      <Diplomas />
+    </div>
   )
+    
+  
 }
 
 export default Home

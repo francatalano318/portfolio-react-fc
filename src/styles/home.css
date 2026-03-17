@@ -1,0 +1,56 @@
+/* ============================
+   HOME PAGE STYLES
+============================ */
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-content {
+  max-width: 700px;
+}
+
+.home-body {
+  border: 1px solid var(--border-section-separator);
+  box-shadow: 0 12px 30px var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  gap: 40px;
+  margin: 0px 20px;
+  border-radius: 14px;
+}
+
+.home-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Wrapper to ensure home + diplomas stack vertically */
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .home-body {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+    justify-content: start;
+  }
+
+  .home-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
